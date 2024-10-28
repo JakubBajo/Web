@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
             li.innerHTML = `
                 <span class="todo-text ${todo.completed ? 'completed' : 'active'}">${todo.text}</span>
                 <div class="button-container">
-                    <button class="complete-btn">${todo.completed ? 'Undo' : 'Complete'}</button>
-                    <button class="edit-btn">Edit</button>
-                    <button class="delete-btn">Delete</button>
+                    <button class="complete-btn">${todo.completed ? '↺' : '✔'}</button>
+                    <button class="edit-btn">✏️</button>
+                    <button class="delete-btn">❌</button>
                     <span class="drag-handle">⇅</span>
                 </div>
             `;
