@@ -166,9 +166,34 @@ button:hover {
 
 /* Add "Completed" text and checkmark (✓) */
 .todo-text.completed::after {
-    content: ' ✓ Dokončené';
+    content: 'Done ✔';
     font-weight: bold;
     color: #ffffff;
     margin-left: 10px;
     font-size: 14px;
+}
+
+/* Orange background for newly added task */
+.todo-text.new-task,
+.editing-mode{
+    background-color: #ff9800;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling the edit input field */
+.editing-mode {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: inline-block;
+}
+
+.deleting {
+    opacity: 0; /* Fade out */
+    transition: opacity 0.3s ease; /* Smooth transition */
 }
