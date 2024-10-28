@@ -166,7 +166,7 @@ button:hover {
 
 /* Add "Completed" text and checkmark (✓) */
 .todo-text.completed::after {
-    content: 'Done ✔';
+    content: '';
     font-weight: bold;
     color: #ffffff;
     margin-left: 10px;
